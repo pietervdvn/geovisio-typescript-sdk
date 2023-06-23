@@ -1,0 +1,19 @@
+{
+  "include": [
+    "./src/*",
+    "test/*",
+    "package.json"
+  ],
+  "compilerOptions": {
+    "module": "ES6",
+    "esModuleInterop": true,
+    "lib": [
+      "ES2015",
+      "DOM"
+    ],
+    "moduleResolution": "Node16"
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
