@@ -1,0 +1,32 @@
+{
+  "name": "geovisio-typescript-sdk",
+  "version": "0.0.1",
+  "description": "A small library to interface with GeoVisio instances",
+  "main": "src/Geovisio.ts",
+  "type": "module",
+  "scripts": {
+    "test": "ts-node test/run.ts",
+    "build": "tsc && tsc -p tsconfig.browser.json",
+    "generate-api": "npx swagger-typescript-api -p https://geovisio.fr/apispec_1.json -o src/ --extract-request-params --extract-request-body --extract-response-body --api-class-name Geovisio --union-enums "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietervdvn/geovisio-typescript-sdk.git"
+  },
+  "keywords": [
+    "Geovisio",
+    "streetview",
+    "images"
+  ],
+  "author": "Pieter Vander Vennet",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/pietervdvn/geovisio-typescript-sdk/issues"
+  },
+  "homepage": "https://github.com/pietervdvn/geovisio-typescript-sdk#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.1",
+    "openapi-typescript": "^6.2.8",
+    "swagger-typescript-api": "^12.0.4"
+  }
+}
